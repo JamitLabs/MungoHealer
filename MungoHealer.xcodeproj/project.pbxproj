@@ -7,26 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		825D64CC2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64CB2174AFCB007A3ED3 /* ErrorHandler.swift */; };
-		825D64CD2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64CB2174AFCB007A3ED3 /* ErrorHandler.swift */; };
-		825D64CE2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64CB2174AFCB007A3ED3 /* ErrorHandler.swift */; };
-		825D64CF2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64CB2174AFCB007A3ED3 /* ErrorHandler.swift */; };
+		825D64CC2174AFCB007A3ED3 /* MungoHealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64CB2174AFCB007A3ED3 /* MungoHealer.swift */; };
+		825D64CE2174AFCB007A3ED3 /* MungoHealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64CB2174AFCB007A3ED3 /* MungoHealer.swift */; };
+		825D64DC2174B888007A3ED3 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64DB2174B888007A3ED3 /* BaseError.swift */; };
+		825D64DE2174B888007A3ED3 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64DB2174B888007A3ED3 /* BaseError.swift */; };
+		825D64E12174BB1C007A3ED3 /* FatalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64E02174BB1C007A3ED3 /* FatalError.swift */; };
+		825D64E32174BB1C007A3ED3 /* FatalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64E02174BB1C007A3ED3 /* FatalError.swift */; };
+		825D65092174C344007A3ED3 /* ErrorSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D65082174C344007A3ED3 /* ErrorSource.swift */; };
+		825D650A2174C344007A3ED3 /* ErrorSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D65082174C344007A3ED3 /* ErrorSource.swift */; };
+		825D650C2174C5E5007A3ED3 /* HealableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D650B2174C5E5007A3ED3 /* HealableError.swift */; };
+		825D650D2174C5E5007A3ED3 /* HealableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D650B2174C5E5007A3ED3 /* HealableError.swift */; };
+		825D650F2174C67D007A3ED3 /* HealingOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D650E2174C67D007A3ED3 /* HealingOption.swift */; };
+		825D65102174C67D007A3ED3 /* HealingOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D650E2174C67D007A3ED3 /* HealingOption.swift */; };
+		825D65152174D32A007A3ED3 /* AlertLogErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D65142174D32A007A3ED3 /* AlertLogErrorHandler.swift */; };
+		825D65162174D32A007A3ED3 /* AlertLogErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D65142174D32A007A3ED3 /* AlertLogErrorHandler.swift */; };
+		825D65182174D335007A3ED3 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D65172174D335007A3ED3 /* ErrorHandler.swift */; };
+		825D65192174D335007A3ED3 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D65172174D335007A3ED3 /* ErrorHandler.swift */; };
+		825D651C2174D570007A3ED3 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D651B2174D570007A3ED3 /* UIWindowExtension.swift */; };
+		825D651D2174D570007A3ED3 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D651B2174D570007A3ED3 /* UIWindowExtension.swift */; };
+		825D65212174DA77007A3ED3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 825D65242174DA77007A3ED3 /* Localizable.strings */; };
+		825D65222174DA77007A3ED3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 825D65242174DA77007A3ED3 /* Localizable.strings */; };
+		825D65282174DB4C007A3ED3 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D65272174DB4C007A3ED3 /* Globals.swift */; };
+		825D65292174DB4C007A3ED3 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D65272174DB4C007A3ED3 /* Globals.swift */; };
 		A102BD481F02355A000C6B38 /* MungoHealer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A102BD3E1F02355A000C6B38 /* MungoHealer.framework */; };
-		A102BD661F023573000C6B38 /* MungoHealer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A102BD5D1F023573000C6B38 /* MungoHealer.framework */; };
 		A102BD821F023582000C6B38 /* MungoHealer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A102BD791F023582000C6B38 /* MungoHealer.framework */; };
 		A102BDB31F0238E8000C6B38 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102BDB01F0238BD000C6B38 /* ExampleTests.swift */; };
-		A102BDB41F0238E8000C6B38 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102BDB01F0238BD000C6B38 /* ExampleTests.swift */; };
 		A102BDB51F0238E9000C6B38 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102BDB01F0238BD000C6B38 /* ExampleTests.swift */; };
 		A102BDCF1F023C73000C6B38 /* Nimble.framework in Carthage */ = {isa = PBXBuildFile; fileRef = A102BDCE1F023C52000C6B38 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A102BDD01F023C73000C6B38 /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = A102BDCD1F023C51000C6B38 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A102BDD11F023C7D000C6B38 /* Nimble.framework in Carthage */ = {isa = PBXBuildFile; fileRef = A102BDCB1F023C4A000C6B38 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A102BDD21F023C7D000C6B38 /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = A102BDCC1F023C4A000C6B38 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A102BDD31F023C81000C6B38 /* Nimble.framework in Carthage */ = {isa = PBXBuildFile; fileRef = A102BDC91F023C3E000C6B38 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A102BDD41F023C81000C6B38 /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = A102BDCA1F023C3E000C6B38 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A102BDFF1F023E32000C6B38 /* MungoHealer.h in Headers */ = {isa = PBXBuildFile; fileRef = A102BDFE1F023E13000C6B38 /* MungoHealer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A102BE001F023E33000C6B38 /* MungoHealer.h in Headers */ = {isa = PBXBuildFile; fileRef = A102BDFE1F023E13000C6B38 /* MungoHealer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A102BE011F023E33000C6B38 /* MungoHealer.h in Headers */ = {isa = PBXBuildFile; fileRef = A102BDFE1F023E13000C6B38 /* MungoHealer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A102BE021F023E34000C6B38 /* MungoHealer.h in Headers */ = {isa = PBXBuildFile; fileRef = A102BDFE1F023E13000C6B38 /* MungoHealer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +48,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = A102BD3D1F02355A000C6B38;
 			remoteInfo = MungoHealer;
-		};
-		A102BD671F023573000C6B38 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A102BD351F02355A000C6B38 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A102BD5C1F023573000C6B38;
-			remoteInfo = "MungoHealer macOS";
 		};
 		A102BD831F023582000C6B38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -66,18 +71,6 @@
 			name = Carthage;
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A102BDBF1F023B3E000C6B38 /* Carthage */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A102BDD11F023C7D000C6B38 /* Nimble.framework in Carthage */,
-				A102BDD21F023C7D000C6B38 /* Quick.framework in Carthage */,
-			);
-			name = Carthage;
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A102BDC01F023B47000C6B38 /* Carthage */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,16 +88,24 @@
 /* Begin PBXFileReference section */
 		000E616F2086425500C0638C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0085926E2046FD1B00AB529F /* beak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beak.swift; sourceTree = "<group>"; };
-		825D64CB2174AFCB007A3ED3 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		825D64CB2174AFCB007A3ED3 /* MungoHealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MungoHealer.swift; sourceTree = "<group>"; };
 		825D64D02174B1CB007A3ED3 /* .projlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .projlint.yml; sourceTree = "<group>"; };
 		825D64D52174B388007A3ED3 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		825D64DB2174B888007A3ED3 /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		825D64E02174BB1C007A3ED3 /* FatalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatalError.swift; sourceTree = "<group>"; };
+		825D65082174C344007A3ED3 /* ErrorSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorSource.swift; sourceTree = "<group>"; };
+		825D650B2174C5E5007A3ED3 /* HealableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealableError.swift; sourceTree = "<group>"; };
+		825D650E2174C67D007A3ED3 /* HealingOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealingOption.swift; sourceTree = "<group>"; };
+		825D65142174D32A007A3ED3 /* AlertLogErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertLogErrorHandler.swift; sourceTree = "<group>"; };
+		825D65172174D335007A3ED3 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		825D651B2174D570007A3ED3 /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
+		825D65232174DA77007A3ED3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		825D65252174DA8E007A3ED3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		825D65272174DB4C007A3ED3 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		A102BD3E1F02355A000C6B38 /* MungoHealer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MungoHealer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A102BD471F02355A000C6B38 /* MungoHealer-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MungoHealer-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A102BD5D1F023573000C6B38 /* MungoHealer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MungoHealer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A102BD651F023573000C6B38 /* MungoHealer-macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MungoHealer-macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A102BD791F023582000C6B38 /* MungoHealer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MungoHealer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A102BD811F023582000C6B38 /* MungoHealer-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MungoHealer-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A102BD951F02358E000C6B38 /* MungoHealer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MungoHealer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A102BDA31F02387A000C6B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A102BDB01F0238BD000C6B38 /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		A102BDB21F0238BD000C6B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,21 +141,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A102BD591F023573000C6B38 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A102BD621F023573000C6B38 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A102BD661F023573000C6B38 /* MungoHealer.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A102BD751F023582000C6B38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,16 +156,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A102BD911F02358E000C6B38 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		825D65112174D1FD007A3ED3 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				825D64DB2174B888007A3ED3 /* BaseError.swift */,
+				825D64E02174BB1C007A3ED3 /* FatalError.swift */,
+				825D650B2174C5E5007A3ED3 /* HealableError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		825D65122174D2C6007A3ED3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				825D65082174C344007A3ED3 /* ErrorSource.swift */,
+				825D650E2174C67D007A3ED3 /* HealingOption.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		825D65132174D2D6007A3ED3 /* ErrorHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				825D65142174D32A007A3ED3 /* AlertLogErrorHandler.swift */,
+				825D65172174D335007A3ED3 /* ErrorHandler.swift */,
+			);
+			path = ErrorHandlers;
+			sourceTree = "<group>";
+		};
+		825D651A2174D55A007A3ED3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				825D651B2174D570007A3ED3 /* UIWindowExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		825D65262174DB36007A3ED3 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				825D65272174DB4C007A3ED3 /* Globals.swift */,
+				825D651A2174D55A007A3ED3 /* Extensions */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
 		A102BD341F02355A000C6B38 = {
 			isa = PBXGroup;
 			children = (
@@ -196,11 +220,8 @@
 			children = (
 				A102BD3E1F02355A000C6B38 /* MungoHealer.framework */,
 				A102BD471F02355A000C6B38 /* MungoHealer-iOS-Tests.xctest */,
-				A102BD5D1F023573000C6B38 /* MungoHealer.framework */,
-				A102BD651F023573000C6B38 /* MungoHealer-macOS-Tests.xctest */,
 				A102BD791F023582000C6B38 /* MungoHealer.framework */,
 				A102BD811F023582000C6B38 /* MungoHealer-tvOS-Tests.xctest */,
-				A102BD951F02358E000C6B38 /* MungoHealer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,7 +238,11 @@
 		A102BDA01F02387A000C6B38 /* MungoHealer */ = {
 			isa = PBXGroup;
 			children = (
-				825D64CB2174AFCB007A3ED3 /* ErrorHandler.swift */,
+				825D64CB2174AFCB007A3ED3 /* MungoHealer.swift */,
+				825D65132174D2D6007A3ED3 /* ErrorHandlers */,
+				825D65112174D1FD007A3ED3 /* Errors */,
+				825D65262174DB36007A3ED3 /* Globals */,
+				825D65122174D2C6007A3ED3 /* Models */,
 			);
 			path = MungoHealer;
 			sourceTree = "<group>";
@@ -226,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				A102BDA31F02387A000C6B38 /* Info.plist */,
+				825D65242174DA77007A3ED3 /* Localizable.strings */,
 				A102BDFE1F023E13000C6B38 /* MungoHealer.h */,
 			);
 			path = SupportingFiles;
@@ -370,27 +396,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A102BD5A1F023573000C6B38 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A102BE001F023E33000C6B38 /* MungoHealer.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A102BD761F023582000C6B38 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A102BE011F023E33000C6B38 /* MungoHealer.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A102BD921F02358E000C6B38 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A102BE021F023E34000C6B38 /* MungoHealer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,45 +446,6 @@
 			productReference = A102BD471F02355A000C6B38 /* MungoHealer-iOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A102BD5C1F023573000C6B38 /* MungoHealer macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A102BD6E1F023573000C6B38 /* Build configuration list for PBXNativeTarget "MungoHealer macOS" */;
-			buildPhases = (
-				A102BD581F023573000C6B38 /* Sources */,
-				A102BD591F023573000C6B38 /* Frameworks */,
-				A102BD5A1F023573000C6B38 /* Headers */,
-				A102BD5B1F023573000C6B38 /* Resources */,
-				A102BDD71F023D5B000C6B38 /* SwiftLint */,
-				825D64D22174B30E007A3ED3 /* ProjLint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "MungoHealer macOS";
-			productName = "MungoHealer macOS";
-			productReference = A102BD5D1F023573000C6B38 /* MungoHealer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A102BD641F023573000C6B38 /* MungoHealer macOS Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A102BD711F023573000C6B38 /* Build configuration list for PBXNativeTarget "MungoHealer macOS Tests" */;
-			buildPhases = (
-				A102BD611F023573000C6B38 /* Sources */,
-				A102BD621F023573000C6B38 /* Frameworks */,
-				A102BD631F023573000C6B38 /* Resources */,
-				A102BDBF1F023B3E000C6B38 /* Carthage */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A102BD681F023573000C6B38 /* PBXTargetDependency */,
-			);
-			name = "MungoHealer macOS Tests";
-			productName = "MungoHealer macOSTests";
-			productReference = A102BD651F023573000C6B38 /* MungoHealer-macOS-Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		A102BD781F023582000C6B38 /* MungoHealer tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A102BD8A1F023582000C6B38 /* Build configuration list for PBXNativeTarget "MungoHealer tvOS" */;
@@ -514,26 +485,6 @@
 			productReference = A102BD811F023582000C6B38 /* MungoHealer-tvOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A102BD941F02358E000C6B38 /* MungoHealer watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A102BD9A1F02358E000C6B38 /* Build configuration list for PBXNativeTarget "MungoHealer watchOS" */;
-			buildPhases = (
-				A102BD901F02358E000C6B38 /* Sources */,
-				A102BD911F02358E000C6B38 /* Frameworks */,
-				A102BD921F02358E000C6B38 /* Headers */,
-				A102BD931F02358E000C6B38 /* Resources */,
-				A102BDD91F023D80000C6B38 /* SwiftLint */,
-				825D64D42174B32D007A3ED3 /* ProjLint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "MungoHealer watchOS";
-			productName = "MungoHealer watchOS";
-			productReference = A102BD951F02358E000C6B38 /* MungoHealer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -542,7 +493,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = JamitLabs;
+				ORGANIZATIONNAME = "Jamit Labs GmbH";
 				TargetAttributes = {
 					A102BD3D1F02355A000C6B38 = {
 						CreatedOnToolsVersion = 9.0;
@@ -554,13 +505,6 @@
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
-					A102BD5C1F023573000C6B38 = {
-						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 1000;
-					};
-					A102BD641F023573000C6B38 = {
-						CreatedOnToolsVersion = 9.0;
-					};
 					A102BD781F023582000C6B38 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 1000;
@@ -568,11 +512,6 @@
 					};
 					A102BD801F023582000C6B38 = {
 						CreatedOnToolsVersion = 9.0;
-					};
-					A102BD941F02358E000C6B38 = {
-						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 1000;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -582,6 +521,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
 			);
 			mainGroup = A102BD341F02355A000C6B38;
 			productRefGroup = A102BD3F1F02355A000C6B38 /* Products */;
@@ -590,11 +530,8 @@
 			targets = (
 				A102BD3D1F02355A000C6B38 /* MungoHealer iOS */,
 				A102BD461F02355A000C6B38 /* MungoHealer iOS Tests */,
-				A102BD5C1F023573000C6B38 /* MungoHealer macOS */,
-				A102BD641F023573000C6B38 /* MungoHealer macOS Tests */,
 				A102BD781F023582000C6B38 /* MungoHealer tvOS */,
 				A102BD801F023582000C6B38 /* MungoHealer tvOS Tests */,
-				A102BD941F02358E000C6B38 /* MungoHealer watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -604,6 +541,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825D65212174DA77007A3ED3 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,24 +552,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A102BD5B1F023573000C6B38 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A102BD631F023573000C6B38 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A102BD771F023582000C6B38 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825D65222174DA77007A3ED3 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,35 +567,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A102BD931F02358E000C6B38 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		825D64D12174B2EF007A3ED3 /* ProjLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = ProjLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which projlint > /dev/null; then\n        projlint lint --xcode --timeout 2 --ignore-network-errors\n    else\n        echo \"warning: ProjLint not installed, download it from https://github.com/JamitLabs/ProjLint\"\n    fi\nfi\n";
-		};
-		825D64D22174B30E007A3ED3 /* ProjLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -706,39 +606,7 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which projlint > /dev/null; then\n        projlint lint --xcode --timeout 2 --ignore-network-errors\n    else\n        echo \"warning: ProjLint not installed, download it from https://github.com/JamitLabs/ProjLint\"\n    fi\nfi\n";
 		};
-		825D64D42174B32D007A3ED3 /* ProjLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = ProjLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which projlint > /dev/null; then\n        projlint lint --xcode --timeout 2 --ignore-network-errors\n    else\n        echo \"warning: ProjLint not installed, download it from https://github.com/JamitLabs/ProjLint\"\n    fi\nfi\n";
-		};
 		A102BDD61F023D4A000C6B38 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which swiftlint > /dev/null; then\n        swiftlint\n    else\n        echo \"warning: SwiftLint not installed, download it from https://github.com/realm/SwiftLint\"\n    fi\nfi\n";
-		};
-		A102BDD71F023D5B000C6B38 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -766,20 +634,6 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which swiftlint > /dev/null; then\n        swiftlint\n    else\n        echo \"warning: SwiftLint not installed, download it from https://github.com/realm/SwiftLint\"\n    fi\nfi\n";
 		};
-		A102BDD91F023D80000C6B38 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which swiftlint > /dev/null; then\n        swiftlint\n    else\n        echo \"warning: SwiftLint not installed, download it from https://github.com/realm/SwiftLint\"\n    fi\nfi\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -787,7 +641,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				825D64CC2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */,
+				825D64E12174BB1C007A3ED3 /* FatalError.swift in Sources */,
+				825D64CC2174AFCB007A3ED3 /* MungoHealer.swift in Sources */,
+				825D650F2174C67D007A3ED3 /* HealingOption.swift in Sources */,
+				825D651C2174D570007A3ED3 /* UIWindowExtension.swift in Sources */,
+				825D65182174D335007A3ED3 /* ErrorHandler.swift in Sources */,
+				825D65152174D32A007A3ED3 /* AlertLogErrorHandler.swift in Sources */,
+				825D650C2174C5E5007A3ED3 /* HealableError.swift in Sources */,
+				825D65092174C344007A3ED3 /* ErrorSource.swift in Sources */,
+				825D65282174DB4C007A3ED3 /* Globals.swift in Sources */,
+				825D64DC2174B888007A3ED3 /* BaseError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,27 +662,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A102BD581F023573000C6B38 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				825D64CD2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A102BD611F023573000C6B38 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A102BDB41F0238E8000C6B38 /* ExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A102BD741F023582000C6B38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				825D64CE2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */,
+				825D64E32174BB1C007A3ED3 /* FatalError.swift in Sources */,
+				825D64CE2174AFCB007A3ED3 /* MungoHealer.swift in Sources */,
+				825D65102174C67D007A3ED3 /* HealingOption.swift in Sources */,
+				825D651D2174D570007A3ED3 /* UIWindowExtension.swift in Sources */,
+				825D65192174D335007A3ED3 /* ErrorHandler.swift in Sources */,
+				825D65162174D32A007A3ED3 /* AlertLogErrorHandler.swift in Sources */,
+				825D650D2174C5E5007A3ED3 /* HealableError.swift in Sources */,
+				825D650A2174C344007A3ED3 /* ErrorSource.swift in Sources */,
+				825D65292174DB4C007A3ED3 /* Globals.swift in Sources */,
+				825D64DE2174B888007A3ED3 /* BaseError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,14 +687,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A102BD901F02358E000C6B38 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				825D64CF2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -847,11 +695,6 @@
 			target = A102BD3D1F02355A000C6B38 /* MungoHealer iOS */;
 			targetProxy = A102BD491F02355A000C6B38 /* PBXContainerItemProxy */;
 		};
-		A102BD681F023573000C6B38 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A102BD5C1F023573000C6B38 /* MungoHealer macOS */;
-			targetProxy = A102BD671F023573000C6B38 /* PBXContainerItemProxy */;
-		};
 		A102BD841F023582000C6B38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A102BD781F023582000C6B38 /* MungoHealer tvOS */;
@@ -859,11 +702,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		825D65242174DA77007A3ED3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				825D65232174DA77007A3ED3 /* en */,
+				825D65252174DA8E007A3ED3 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		A102BD501F02355A000C6B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -932,6 +788,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1064,79 +921,6 @@
 			};
 			name = Release;
 		};
-		A102BD6F1F023573000C6B38 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		A102BD701F023573000C6B38 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		A102BD721F023573000C6B38 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8DHP3ZYQ2N;
-				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jamitlabs.$(TARGET_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:rfc1034identifier)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		A102BD731F023573000C6B38 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8DHP3ZYQ2N;
-				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jamitlabs.$(TARGET_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:rfc1034identifier)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 		A102BD8B1F023582000C6B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1214,55 +998,6 @@
 			};
 			name = Release;
 		};
-		A102BD9B1F02358E000C6B38 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
-			};
-			name = Debug;
-		};
-		A102BD9C1F02358E000C6B38 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1293,24 +1028,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A102BD6E1F023573000C6B38 /* Build configuration list for PBXNativeTarget "MungoHealer macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A102BD6F1F023573000C6B38 /* Debug */,
-				A102BD701F023573000C6B38 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A102BD711F023573000C6B38 /* Build configuration list for PBXNativeTarget "MungoHealer macOS Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A102BD721F023573000C6B38 /* Debug */,
-				A102BD731F023573000C6B38 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A102BD8A1F023582000C6B38 /* Build configuration list for PBXNativeTarget "MungoHealer tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1325,15 +1042,6 @@
 			buildConfigurations = (
 				A102BD8E1F023582000C6B38 /* Debug */,
 				A102BD8F1F023582000C6B38 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A102BD9A1F02358E000C6B38 /* Build configuration list for PBXNativeTarget "MungoHealer watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A102BD9B1F02358E000C6B38 /* Debug */,
-				A102BD9C1F02358E000C6B38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
