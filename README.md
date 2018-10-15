@@ -4,6 +4,10 @@
 </p>
 
 <p align="center">
+    <a href="https://app.bitrise.io/app/fbdb7fe2d4879760">
+        <img src="https://app.bitrise.io/app/fbdb7fe2d4879760/status.svg?token=bXijt_o5Fsl1E8cqtrrXLw&branch=stable"
+             alt="Build Status">
+    </a>
     <a href="https://github.com/JamitLabs/MungoHealer/releases">
         <img src="https://img.shields.io/badge/Version-0.0.0-blue.svg"
              alt="Version: 0.0.0">
