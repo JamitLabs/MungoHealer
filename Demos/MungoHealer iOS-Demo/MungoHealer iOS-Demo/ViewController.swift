@@ -1,7 +1,4 @@
 //
-//  ViewController.swift
-//  MungoHealer iOS-Demo
-//
 //  Created by Cihat Gündüz on 15.10.18.
 //  Copyright © 2018 Jamit Labs. All rights reserved.
 //
@@ -9,15 +6,78 @@
 import MungoHealer
 import UIKit
 
-enum MyCustomError: MungoHealer
+struct MyError: Error {}
 
-class ViewController: UIViewController {
+struct MyLocalizedError: LocalizedError {
+    let errorDescription: String? = "This is a fake localized error message for presenting to the user."
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+struct MyBaseError: BaseError {
+    let errorDescription = "This is a fake base error message for presenting to the user."
+    let source = ErrorSource.allCases.randomElement()!
+}
+
+struct MyFatalError: FatalError {
+    let errorDescription = "This is a fake fatal error message for presenting to the user."
+    let source = ErrorSource.allCases.randomElement()!
+}
+
+struct MyHealableError: HealableError {
+    private let retryClosure: () -> Void
+
+    let errorDescription = "This is a fake healable error message for presenting to the user."
+    let source = ErrorSource.allCases.randomElement()!
+
+    var healingOptions: [HealingOption] {
+        let retryOption = HealingOption(style: .recommended, title: "Try Again", handler: retryClosure)
+        let cancelOption = HealingOption(style: .normal, title: "Cancel", handler: {})
+        return [retryOption, cancelOption]
     }
 
+    init(retryClosure: @escaping () -> Void) {
+        self.retryClosure = retryClosure
+    }
+}
 
+class ViewController: UIViewController {
+    @IBAction func throwErrorButtonPressed() {
+        do {
+            throw MyError()
+        } catch {
+            mungo.handle(error)
+        }
+    }
+
+    @IBAction func throwLocalizedErrorButtonPressed() {
+        do {
+            throw MyLocalizedError()
+        } catch {
+            mungo.handle(error)
+        }
+    }
+
+    @IBAction func throwBaseErrorButtonPressed() {
+        do {
+            throw MyBaseError()
+        } catch {
+            mungo.handle(error)
+        }
+    }
+
+    @IBAction func throwFatalErrorButtonPressed() {
+        do {
+            throw MyFatalError()
+        } catch {
+            mungo.handle(error)
+        }
+    }
+
+    @IBAction func throwHealableErrorButtonPressed() {
+        do {
+            throw MyHealableError(retryClosure: { [weak self] in self?.throwHealableErrorButtonPressed() })
+        } catch {
+            mungo.handle(error)
+        }
+    }
 }
 

@@ -9,7 +9,4 @@ import Foundation
 public protocol HealableError: BaseError {
     /// Provides an array of possible healing options to present to the user.
     var healingOptions: [HealingOption] { get }
-
-    /// Attempt to heal (recover) from this error when the user selected the given option.
-    func attemptHealing(option: HealingOption, handler: (Bool) -> Void)
 }

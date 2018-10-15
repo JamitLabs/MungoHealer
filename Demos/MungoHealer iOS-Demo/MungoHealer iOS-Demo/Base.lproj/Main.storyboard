@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,66 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MungoHealer_iOS_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="V3y-F8-bIP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0p-EU-AnW">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="163.66666666666666"/>
+                                        <state key="normal" title="Throw Error"/>
+                                        <connections>
+                                            <action selector="throwErrorButtonPressed" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="aoB-aH-XGi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoU-iY-cSF">
+                                        <rect key="frame" x="0.0" y="163.66666666666669" width="414" height="163.66666666666669"/>
+                                        <state key="normal" title="Throw LocalizedError"/>
+                                        <connections>
+                                            <action selector="throwLocalizedErrorButtonPressed" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="hxp-hD-7eR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVC-4t-5VK">
+                                        <rect key="frame" x="0.0" y="327.33333333333331" width="414" height="163.33333333333331"/>
+                                        <state key="normal" title="Throw BaseError"/>
+                                        <connections>
+                                            <action selector="throwBaseErrorButtonPressed" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ome-NX-Bhz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWt-mk-eDa">
+                                        <rect key="frame" x="0.0" y="490.66666666666669" width="414" height="163.66666666666669"/>
+                                        <state key="normal" title="Throw FatalError"/>
+                                        <connections>
+                                            <action selector="throwFatalErrorButtonPressed" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="pst-D5-cMb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNg-2f-fXu">
+                                        <rect key="frame" x="0.0" y="654.33333333333337" width="414" height="163.66666666666663"/>
+                                        <state key="normal" title="Throw HealableError"/>
+                                        <connections>
+                                            <action selector="throwHealableErrorButtonPressed" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="y5G-Bc-s2K"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.3411764705882353" green="0.1764705882352941" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="V3y-F8-bIP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5l2-50-EPp"/>
+                            <constraint firstItem="V3y-F8-bIP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="h9Q-kn-7RL"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="V3y-F8-bIP" secondAttribute="bottom" id="kCN-Lw-vOV"/>
+                            <constraint firstItem="V3y-F8-bIP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xK6-qT-iWd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.33333333333334" y="133.92857142857142"/>
         </scene>
     </scenes>
 </document>

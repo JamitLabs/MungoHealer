@@ -1,3 +1,6 @@
+// Alert Log Error Handler - Generic
+"ALERT_LOG_ERROR_HANDLER.GENERIC_ERROR_TITLE" = "Unknown Error";
+
 // Alert Log Error Handler - Error Source Title
 "ALERT_LOG_ERROR_HANDLER.ERROR_SOURCE_TITLE.INVALID_USER_INPUT" = "Invalid User Input";
 "ALERT_LOG_ERROR_HANDLER.ERROR_SOURCE_TITLE.INTERNAL_INCONSISTENCY" = "Internal Inconsistency";

@@ -23,7 +23,6 @@
 		825D64F82174BD62007A3ED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		825D64FB2174BD62007A3ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		825D64FD2174BD62007A3ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		825D65042174BD78007A3ED3 /* MungoHealer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MungoHealer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		825D65062174BDBC007A3ED3 /* MungoHealer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MungoHealer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				825D65062174BDBC007A3ED3 /* MungoHealer.framework */,
-				825D65042174BD78007A3ED3 /* MungoHealer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

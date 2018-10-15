@@ -14,5 +14,11 @@ public protocol BaseError: Error {
     var source: ErrorSource { get }
 
     /// A localized message describing what error occurred.
-    var localizedDescription: String { get }
+    var errorDescription: String { get }
+}
+
+extension BaseError {
+    var localizedDescription: String {
+        return errorDescription
+    }
 }

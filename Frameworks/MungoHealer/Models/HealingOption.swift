@@ -22,4 +22,16 @@ public struct HealingOption {
 
     /// The code to be executed when the user chooses the healing option.
     public let handler: () -> Void
+
+    /// Crates a new healing option with the given parameters.
+    ///
+    /// - Parameters:
+    ///   - style: The style of the actionable item.
+    ///   - title: The title of the actionable item.
+    ///   - handler: The code to be run when the user chooses this option.
+    public init(style: Style, title: String, handler: @escaping () -> Void) {
+        self.style = style
+        self.title = title
+        self.handler = handler
+    }
 }

@@ -17,6 +17,16 @@ public struct AlertLogErrorHandler {
         return window.topViewController
     }
 
+    /// Creates an error handler that will log errors and present system alerts when appropriate.
+    ///
+    /// - Parameters:
+    ///   - window: The key window of the application to find the current view controller.
+    ///   - logError: The code to be called when trying to log some error message.
+    public init(window: UIWindow, logError: @escaping (String) -> Void) {
+        self.window = window
+        self.logError = logError
+    }
+
     fileprivate func showAlert(title: String, message: String, actions: [UIAlertAction]) {
         let alertCtrl = UIAlertController(title: title, message: message, preferredStyle: .alert)
         actions.forEach { alertCtrl.addAction($0) }
@@ -27,6 +37,13 @@ public struct AlertLogErrorHandler {
 extension AlertLogErrorHandler: ErrorHandler {
     public func handle(error: Error) {
         logError(error.localizedDescription)
+
+        if let localizedError = error as? LocalizedError, let errorDescription = localizedError.errorDescription {
+            let alertTitle = LocalizedString("ALERT_LOG_ERROR_HANDLER.GENERIC_ERROR_TITLE")
+            let okayTitle = LocalizedString("ALERT_LOG_ERROR_HANDLER.OKAY_BUTTON.TITLE")
+            let okayAlertAction = UIAlertAction(title: okayTitle, style: .default, handler: nil)
+            showAlert(title: alertTitle, message: errorDescription, actions: [okayAlertAction])
+        }
     }
 
     public func handle(baseError: BaseError) {
@@ -41,7 +58,10 @@ extension AlertLogErrorHandler: ErrorHandler {
         logError(fatalError.localizedDescription)
 
         let terminateTitle = LocalizedString("ALERT_LOG_ERROR_HANDLER.TERMINATE_BUTTON.TITLE")
-        let terminateAlertAction = UIAlertAction(title: terminateTitle, style: .destructive, handler: nil)
+        let terminateAlertAction = UIAlertAction(title: terminateTitle, style: .destructive) { _ in
+            self.crash(message: fatalError.localizedDescription)
+        }
+
         showAlert(title: title(for: fatalError.source), message: fatalError.localizedDescription, actions: [terminateAlertAction])
     }
 
@@ -85,5 +105,9 @@ extension AlertLogErrorHandler: ErrorHandler {
         }()
 
         return UIAlertAction(title: healingOption.title, style: alertActionStyle) { _ in healingOption.handler() }
+    }
+
+    private func crash(message: String) { // swiftlint:disable:this unavailable_function
+        fatalError(message)
     }
 }
