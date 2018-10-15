@@ -1,30 +1,21 @@
-// swift-tools-version:4.0
+// swift-tools-version:4.2
 import PackageDescription
 
 let package = Package(
     name: "MungoHealer",
     products: [
-        .library(
-            name: "MungoHealer",
-            targets: ["MungoHealer"]
-        )
-    ],
-    dependencies: [
-//        .package(url: "https://github.com/Flinesoft/HandySwift.git", .upToNextMajor(from: "2.5.0")),
-//        .package(url: "https://github.com/Flinesoft/HandyUIKit.git", .upToNextMajor(from: "1.6.0"))
+        .library(name: "MungoHealer", targets: ["MungoHealer"])
     ],
     targets: [
         .target(
             name: "MungoHealer",
-            dependencies: [
-//                "HandySwift",
-//                "HandyUIKit"
-            ],
-            path: "Sources",
-            exclude: [
-                "Sources/Supporting Files"
-            ]
+            path: "Frameworks/MungoHealer",
+            exclude: ["Frameworks/SupportingFiles"]
+        ),
+        .testTarget(
+            name: "MungoHealerTests",
+            dependencies: ["MungoHealer"],
+            exclude: ["Tests/SupportingFiles"]
         )
-    ],
-    swiftLanguageVersions: [4]
+    ]
 )

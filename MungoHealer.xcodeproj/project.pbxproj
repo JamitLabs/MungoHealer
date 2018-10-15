@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		825D64CC2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64CB2174AFCB007A3ED3 /* ErrorHandler.swift */; };
+		825D64CD2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64CB2174AFCB007A3ED3 /* ErrorHandler.swift */; };
+		825D64CE2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64CB2174AFCB007A3ED3 /* ErrorHandler.swift */; };
+		825D64CF2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D64CB2174AFCB007A3ED3 /* ErrorHandler.swift */; };
 		A102BD481F02355A000C6B38 /* MungoHealer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A102BD3E1F02355A000C6B38 /* MungoHealer.framework */; };
 		A102BD661F023573000C6B38 /* MungoHealer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A102BD5D1F023573000C6B38 /* MungoHealer.framework */; };
 		A102BD821F023582000C6B38 /* MungoHealer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A102BD791F023582000C6B38 /* MungoHealer.framework */; };
@@ -91,6 +95,7 @@
 /* Begin PBXFileReference section */
 		000E616F2086425500C0638C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0085926E2046FD1B00AB529F /* beak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beak.swift; sourceTree = "<group>"; };
+		825D64CB2174AFCB007A3ED3 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		A102BD3E1F02355A000C6B38 /* MungoHealer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MungoHealer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A102BD471F02355A000C6B38 /* MungoHealer-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MungoHealer-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A102BD5D1F023573000C6B38 /* MungoHealer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MungoHealer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,7 +181,7 @@
 		A102BD341F02355A000C6B38 = {
 			isa = PBXGroup;
 			children = (
-				A102BD9D1F02387A000C6B38 /* Sources */,
+				A102BD9D1F02387A000C6B38 /* Frameworks */,
 				A102BDAE1F0238BD000C6B38 /* Tests */,
 				A102BDB61F023A6D000C6B38 /* Root Files */,
 				A102BDBA1F023B06000C6B38 /* Carthage */,
@@ -198,70 +203,55 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A102BD9D1F02387A000C6B38 /* Sources */ = {
+		A102BD9D1F02387A000C6B38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A102BD9E1F02387A000C6B38 /* Assets */,
-				A102BDA01F02387A000C6B38 /* Code */,
-				A102BDA51F02387A000C6B38 /* User Interface */,
-				A102BDA21F02387A000C6B38 /* Supporting Files */,
+				A102BDA01F02387A000C6B38 /* MungoHealer */,
+				A102BDA21F02387A000C6B38 /* SupportingFiles */,
 			);
-			path = Sources;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
-		A102BD9E1F02387A000C6B38 /* Assets */ = {
+		A102BDA01F02387A000C6B38 /* MungoHealer */ = {
 			isa = PBXGroup;
 			children = (
+				825D64CB2174AFCB007A3ED3 /* ErrorHandler.swift */,
 			);
-			path = Assets;
+			path = MungoHealer;
 			sourceTree = "<group>";
 		};
-		A102BDA01F02387A000C6B38 /* Code */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Code;
-			sourceTree = "<group>";
-		};
-		A102BDA21F02387A000C6B38 /* Supporting Files */ = {
+		A102BDA21F02387A000C6B38 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				A102BDFE1F023E13000C6B38 /* MungoHealer.h */,
 				A102BDA31F02387A000C6B38 /* Info.plist */,
 			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A102BDA51F02387A000C6B38 /* User Interface */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "User Interface";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		A102BDAE1F0238BD000C6B38 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A102BDAF1F0238BD000C6B38 /* Code */,
-				A102BDB11F0238BD000C6B38 /* Supporting Files */,
+				A102BDAF1F0238BD000C6B38 /* MungoHealerTests */,
+				A102BDB11F0238BD000C6B38 /* SupportingFiles */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		A102BDAF1F0238BD000C6B38 /* Code */ = {
+		A102BDAF1F0238BD000C6B38 /* MungoHealerTests */ = {
 			isa = PBXGroup;
 			children = (
 				A102BDB01F0238BD000C6B38 /* ExampleTests.swift */,
 			);
-			path = Code;
+			path = MungoHealerTests;
 			sourceTree = "<group>";
 		};
-		A102BDB11F0238BD000C6B38 /* Supporting Files */ = {
+		A102BDB11F0238BD000C6B38 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				A102BDB21F0238BD000C6B38 /* Info.plist */,
 			);
-			path = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		A102BDB61F023A6D000C6B38 /* Root Files */ = {
@@ -544,10 +534,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "JamitLabs";
+				ORGANIZATIONNAME = JamitLabs;
 				TargetAttributes = {
 					A102BD3D1F02355A000C6B38 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					A102BD461F02355A000C6B38 = {
@@ -556,12 +547,14 @@
 					};
 					A102BD5C1F023573000C6B38 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1000;
 					};
 					A102BD641F023573000C6B38 = {
 						CreatedOnToolsVersion = 9.0;
 					};
 					A102BD781F023582000C6B38 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					A102BD801F023582000C6B38 = {
@@ -569,6 +562,7 @@
 					};
 					A102BD941F02358E000C6B38 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -712,6 +706,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825D64CC2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +722,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825D64CD2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,6 +738,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825D64CE2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,6 +754,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825D64CF2174AFCB007A3ED3 /* ErrorHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -834,8 +832,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamitlabs.$(PRODUCT_NAME:c99extidentifier)";
@@ -895,8 +893,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamitlabs.$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = MungoHealer;
@@ -911,17 +909,21 @@
 		A102BD531F02355A000C6B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -930,13 +932,16 @@
 		A102BD541F02355A000C6B38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -949,10 +954,11 @@
 		A102BD561F02355A000C6B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DHP3ZYQ2N;
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamitlabs.$(TARGET_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:rfc1034identifier)";
@@ -965,10 +971,11 @@
 		A102BD571F02355A000C6B38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DHP3ZYQ2N;
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamitlabs.$(TARGET_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:rfc1034identifier)";
@@ -981,17 +988,21 @@
 		A102BD6F1F023573000C6B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -999,13 +1010,16 @@
 		A102BD701F023573000C6B38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				SDKROOT = macosx;
@@ -1017,10 +1031,11 @@
 		A102BD721F023573000C6B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8DHP3ZYQ2N;
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamitlabs.$(TARGET_NAME:rfc1034identifier)";
@@ -1033,10 +1048,11 @@
 		A102BD731F023573000C6B38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8DHP3ZYQ2N;
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamitlabs.$(TARGET_NAME:rfc1034identifier)";
@@ -1049,18 +1065,22 @@
 		A102BD8B1F023582000C6B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.0;
@@ -1070,13 +1090,16 @@
 		A102BD8C1F023582000C6B38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1091,8 +1114,9 @@
 		A102BD8E1F023582000C6B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamitlabs.$(TARGET_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:rfc1034identifier)";
@@ -1106,8 +1130,9 @@
 		A102BD8F1F023582000C6B38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamitlabs.$(TARGET_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:rfc1034identifier)";
@@ -1122,18 +1147,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
@@ -1144,13 +1173,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PROVISIONING_PROFILE_SPECIFIER = "";
