@@ -42,7 +42,8 @@ While there are many ways to deal with such situations, MungoHealer provides a s
 
 ## Installation
 
-Installing via [Carthage](https://github.com/Carthage/Carthage#carthage) & [CocoaPods](https://guides.cocoapods.org/using/getting-started.html) are both supported. Support for SPM is currently not possible as this framework uses UIKit.
+Installing via [Carthage](https://github.com/Carthage/Carthage#carthage) & [CocoaPods](https://guides.cocoapods.org/using/getting-started.html) are both supported.
+Support for SPM is currently not possible as this framework uses UIKit.
 
 ## Usage
 
@@ -68,7 +69,7 @@ MungoHealer can deal with any errors thrown by system frameworks or third party 
 A localized error type without the overhead of NSError – truly designed for Swift. Use this for any error you want to provide localized user feedback for.
 
 <details>
-<summary>`BaseError` Requirements</summary>
+<summary>Requirements</summary>
 
 **`source: ErrorSource`**
 A classification of the errors source. MungoHealer will automatically provide an alert title based on it. The available options are:
@@ -86,7 +87,7 @@ A localized message describing what error occurred. This will be presented to th
 </details>
 
 <details>
-<summary>`BaseError` Example</summary>
+<summary>Example</summary>
 
 ```swift
 struct PasswordValidationError: BaseError {
@@ -106,7 +107,7 @@ Note that throwing a `FatalError` will crash your app, just like `fatalError()` 
 *It is highly recommended to ***keep the suffix `FatalError`*** in your custom errors class name to clearly communicate that throwing this will crash the app.*
 
 <details>
-<summary>`FatalError` Requirements</summary>
+<summary>Requirements</summary>
 
 `FatalError` has the exact same requirements as `BaseError`. In fact its type declaration is as simple as this:
 
@@ -119,7 +120,7 @@ The only difference is semantics – the data provided by a `FatalError` will be
 </details>
 
 <details>
-<summary>`FatalError` Example</summary>
+<summary>Example</summary>
 
 ```swift
 struct UnexpectedNilFatalError: FatalError {
@@ -136,7 +137,7 @@ struct UnexpectedNilFatalError: FatalError {
 A healable (recoverable) & localized error type without the overhead of NSError – truly designed for Swift. Use this for any edge-cases you can heal (recover from) like network timeouts (healing via Retry), network unauthorized responses (healing via Logout) etc.
 
 <details>
-<summary>`HealableError` Requirements</summary>
+<summary>Requirements</summary>
 
 `HealableError` extends `BaseError` and therefore has the same requirements. In addition to that, you need to add:
 
@@ -152,7 +153,7 @@ Note that you must provide at least one healing option.
 </details>
 
 <details>
-<summary>`HealableError` Example</summary>
+<summary>Example</summary>
 
 ```swift
 struct NetworkUnavailableError: HealableError {
