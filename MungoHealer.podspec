@@ -2,25 +2,24 @@ Pod::Spec.new do |s|
 
   s.name         = "MungoHealer"
   s.version      = "0.1.0"
-  s.summary      = "TODO: write short framework description"
+  s.summary      = "Error Handler based on localized & healable (recoverable) errors without the overhead of NSError. "
 
   s.description  = <<-DESC
-    This project encapsulates preconfigured framework targets, Swiftlint configuration, multiple dependency manager
-    support and more to make the step of creating a new framework project for Apple platforms easy & quick.
+    Error Handler based on localized & healable (recoverable) errors without the overhead of NSError
+    (which you would have when using LocalizedError & RecoverableError instead).
                    DESC
 
   s.homepage     = "https://github.com/JamitLabs/MungoHealer"
-  s.license      = { :type => "MIT", :file => "LICENSE.md" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
   s.author             = { "Cihat Gündüz" => "cocoapods@cihatguenduez.de" }
   s.social_media_url   = "https://twitter.com/Dschee"
 
-  s.ios.deployment_target = "11.0"
-  s.osx.deployment_target = "10.13"
-  s.tvos.deployment_target = "11.0"
+  s.ios.deployment_target = "8.0"
+  s.tvos.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/JamitLabs/MungoHealer.git", :tag => "#{s.version}" }
-  s.source_files = "Sources", "Sources/**/*.swift"
+  s.source_files = "Frameworks/MungoHealer", "Frameworks/MungoHealer/**/*.swift"
   s.framework    = "Foundation"
 
   # s.dependency "HandyUIKit", "~> 1.6"
