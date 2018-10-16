@@ -5,17 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 ### Added
-- Some new features such as a new rule.
-### Changed
-- Some change in functionality on existing rules.
-### Deprecated
-- Some feature that will be removed in a future version.
-### Removed
-- Some feature that was removed.
-### Fixed
-- Some bug that was fixed. Should link to issue. [#0](https://github.com/Flinesoft/{TOOL_NAME}/issues/0)
-### Security
-- Some security related fix.
+- Convenience implementations of error protocols: `MungoError`, `MungoFatalError` & `MungoHealableError`
 
 ## [0.1.0] - 2018-10-16
 ### Added
