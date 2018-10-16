@@ -43,6 +43,7 @@ While there are many ways to deal with such situations, MungoHealer provides a s
 ## Installation
 
 Installing via [Carthage](https://github.com/Carthage/Carthage#carthage) & [CocoaPods](https://guides.cocoapods.org/using/getting-started.html) are both supported.
+
 Support for SPM is currently not possible as this framework uses UIKit.
 
 ## Usage
