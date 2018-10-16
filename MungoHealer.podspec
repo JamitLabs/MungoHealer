@@ -2,10 +2,11 @@ Pod::Spec.new do |s|
 
   s.name         = "MungoHealer"
   s.version      = "0.1.0"
-  s.summary      = "TODO: write short framework description"
+  s.summary      = "Error Handler based on localized & healable (recoverable) errors without the overhead of NSError. "
 
   s.description  = <<-DESC
-    TODO: Write long description.
+    Error Handler based on localized & healable (recoverable) errors without the overhead of NSError
+    (which you would have when using LocalizedError & RecoverableError instead).
                    DESC
 
   s.homepage     = "https://github.com/JamitLabs/MungoHealer"
@@ -14,8 +15,8 @@ Pod::Spec.new do |s|
   s.author             = { "Cihat Gündüz" => "cocoapods@cihatguenduez.de" }
   s.social_media_url   = "https://twitter.com/Dschee"
 
-  s.ios.deployment_target = "12.0"
-  s.tvos.deployment_target = "12.0"
+  s.ios.deployment_target = "8.0"
+  s.tvos.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/JamitLabs/MungoHealer.git", :tag => "#{s.version}" }
   s.source_files = "Frameworks/MungoHealer", "Frameworks/MungoHealer/**/*.swift"
