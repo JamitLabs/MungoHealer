@@ -5,9 +5,6 @@
       location = "group:MungoHealer.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:UsageExamples.playground">
-   </FileRef>
-   <FileRef
       location = "group:Demos/MungoHealer iOS-Demo/MungoHealer iOS-Demo.xcodeproj">
    </FileRef>
 </Workspace>
