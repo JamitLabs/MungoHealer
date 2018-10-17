@@ -29,6 +29,12 @@
 		825D65222174DA77007A3ED3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 825D65242174DA77007A3ED3 /* Localizable.strings */; };
 		825D65282174DB4C007A3ED3 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D65272174DB4C007A3ED3 /* Globals.swift */; };
 		825D65292174DB4C007A3ED3 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825D65272174DB4C007A3ED3 /* Globals.swift */; };
+		82C646E321762A9B00A41245 /* MungoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C646E221762A9B00A41245 /* MungoError.swift */; };
+		82C646E421762A9B00A41245 /* MungoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C646E221762A9B00A41245 /* MungoError.swift */; };
+		82C646E621762B7500A41245 /* MungoFatalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C646E521762B7500A41245 /* MungoFatalError.swift */; };
+		82C646E721762B7500A41245 /* MungoFatalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C646E521762B7500A41245 /* MungoFatalError.swift */; };
+		82C646E921762B7F00A41245 /* MungoHealableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C646E821762B7F00A41245 /* MungoHealableError.swift */; };
+		82C646EA21762B7F00A41245 /* MungoHealableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C646E821762B7F00A41245 /* MungoHealableError.swift */; };
 		A102BD481F02355A000C6B38 /* MungoHealer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A102BD3E1F02355A000C6B38 /* MungoHealer.framework */; };
 		A102BD821F023582000C6B38 /* MungoHealer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A102BD791F023582000C6B38 /* MungoHealer.framework */; };
 		A102BDB31F0238E8000C6B38 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102BDB01F0238BD000C6B38 /* ExampleTests.swift */; };
@@ -102,6 +108,9 @@
 		825D65232174DA77007A3ED3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		825D65252174DA8E007A3ED3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		825D65272174DB4C007A3ED3 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		82C646E221762A9B00A41245 /* MungoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MungoError.swift; sourceTree = "<group>"; };
+		82C646E521762B7500A41245 /* MungoFatalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MungoFatalError.swift; sourceTree = "<group>"; };
+		82C646E821762B7F00A41245 /* MungoHealableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MungoHealableError.swift; sourceTree = "<group>"; };
 		A102BD3E1F02355A000C6B38 /* MungoHealer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MungoHealer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A102BD471F02355A000C6B38 /* MungoHealer-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MungoHealer-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A102BD791F023582000C6B38 /* MungoHealer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MungoHealer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,14 +168,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		825D65112174D1FD007A3ED3 /* Errors */ = {
+		825D65112174D1FD007A3ED3 /* ErrorsProtocols */ = {
 			isa = PBXGroup;
 			children = (
 				825D64DB2174B888007A3ED3 /* BaseError.swift */,
 				825D64E02174BB1C007A3ED3 /* FatalError.swift */,
 				825D650B2174C5E5007A3ED3 /* HealableError.swift */,
 			);
-			path = Errors;
+			path = ErrorsProtocols;
 			sourceTree = "<group>";
 		};
 		825D65122174D2C6007A3ED3 /* Models */ = {
@@ -202,6 +211,16 @@
 				825D651A2174D55A007A3ED3 /* Extensions */,
 			);
 			path = Globals;
+			sourceTree = "<group>";
+		};
+		82C646E121762A4C00A41245 /* ErrorTypes */ = {
+			isa = PBXGroup;
+			children = (
+				82C646E221762A9B00A41245 /* MungoError.swift */,
+				82C646E521762B7500A41245 /* MungoFatalError.swift */,
+				82C646E821762B7F00A41245 /* MungoHealableError.swift */,
+			);
+			path = ErrorTypes;
 			sourceTree = "<group>";
 		};
 		A102BD341F02355A000C6B38 = {
@@ -240,7 +259,8 @@
 			children = (
 				825D64CB2174AFCB007A3ED3 /* MungoHealer.swift */,
 				825D65132174D2D6007A3ED3 /* ErrorHandlers */,
-				825D65112174D1FD007A3ED3 /* Errors */,
+				82C646E121762A4C00A41245 /* ErrorTypes */,
+				825D65112174D1FD007A3ED3 /* ErrorsProtocols */,
 				825D65262174DB36007A3ED3 /* Globals */,
 				825D65122174D2C6007A3ED3 /* Models */,
 			);
@@ -641,10 +661,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C646E621762B7500A41245 /* MungoFatalError.swift in Sources */,
+				82C646E321762A9B00A41245 /* MungoError.swift in Sources */,
 				825D64E12174BB1C007A3ED3 /* FatalError.swift in Sources */,
 				825D64CC2174AFCB007A3ED3 /* MungoHealer.swift in Sources */,
 				825D650F2174C67D007A3ED3 /* HealingOption.swift in Sources */,
 				825D651C2174D570007A3ED3 /* UIWindowExtension.swift in Sources */,
+				82C646E921762B7F00A41245 /* MungoHealableError.swift in Sources */,
 				825D65182174D335007A3ED3 /* ErrorHandler.swift in Sources */,
 				825D65152174D32A007A3ED3 /* AlertLogErrorHandler.swift in Sources */,
 				825D650C2174C5E5007A3ED3 /* HealableError.swift in Sources */,
@@ -666,10 +689,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C646E721762B7500A41245 /* MungoFatalError.swift in Sources */,
+				82C646E421762A9B00A41245 /* MungoError.swift in Sources */,
 				825D64E32174BB1C007A3ED3 /* FatalError.swift in Sources */,
 				825D64CE2174AFCB007A3ED3 /* MungoHealer.swift in Sources */,
 				825D65102174C67D007A3ED3 /* HealingOption.swift in Sources */,
 				825D651D2174D570007A3ED3 /* UIWindowExtension.swift in Sources */,
+				82C646EA21762B7F00A41245 /* MungoHealableError.swift in Sources */,
 				825D65192174D335007A3ED3 /* ErrorHandler.swift in Sources */,
 				825D65162174D32A007A3ED3 /* AlertLogErrorHandler.swift in Sources */,
 				825D650D2174C5E5007A3ED3 /* HealableError.swift in Sources */,
