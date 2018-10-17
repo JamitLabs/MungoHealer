@@ -183,7 +183,7 @@ struct NetworkUnavailableError: HealableError {
 MungoHealer provides one basic implementation of each error protocol which you can use for convenience so you don't have to write a new error type for simple message errors. These are:
 
 <details>
-<summary>**MungoError**</summary>
+<summary>MungoError</summary>
 
 - Implements `BaseError`
 - `init` takes `source: ErrorSource` & `message: String`
@@ -203,7 +203,7 @@ func fetchImage(urlPath: String) {
 </details>
 
 <details>
-<summary>**MungoFatalError**</summary>
+<summary>MungoFatalError</summary>
 
 - Implements `FatalError`
 - `init` takes `source: ErrorSource` & `message: String`
@@ -223,7 +223,7 @@ func fetchImage(urlPath: String) {
 </details>
 
 <details>
-<summary>*MungoHealableError**</summary>
+<summary>MungoHealableError</summary>
 
 - Implements `HealableError`
 - `init` takes `source: ErrorSource` & `message: String`
