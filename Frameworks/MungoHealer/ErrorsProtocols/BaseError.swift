@@ -24,8 +24,4 @@ extension BaseError {
     var localizedDescription: String {
         return errorDescription
     }
-
-    var debugDescription: String {
-        return errorDescription
-    }
 }
