@@ -15,10 +15,17 @@ public protocol BaseError: Error {
 
     /// A localized message describing what error occurred.
     var errorDescription: String { get }
+
+    /// A more concise description of the error for debugging purposes.
+    var debugDescription: String? { get }
 }
 
 extension BaseError {
     var localizedDescription: String {
+        return errorDescription
+    }
+
+    var debugDescription: String {
         return errorDescription
     }
 }

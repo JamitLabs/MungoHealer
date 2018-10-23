@@ -36,7 +36,7 @@ public struct AlertLogErrorHandler {
 
 extension AlertLogErrorHandler: ErrorHandler {
     public func handle(error: Error) {
-        logError(error.localizedDescription)
+        log(error)
 
         if let localizedError = error as? LocalizedError, let errorDescription = localizedError.errorDescription {
             let alertTitle = LocalizedString("ALERT_LOG_ERROR_HANDLER.GENERIC_ERROR_TITLE")
@@ -47,7 +47,7 @@ extension AlertLogErrorHandler: ErrorHandler {
     }
 
     public func handle(baseError: BaseError) {
-        logError(baseError.localizedDescription)
+        log(baseError)
 
         let okayTitle = LocalizedString("ALERT_LOG_ERROR_HANDLER.OKAY_BUTTON.TITLE")
         let okayAlertAction = UIAlertAction(title: okayTitle, style: .default, handler: nil)
@@ -55,7 +55,7 @@ extension AlertLogErrorHandler: ErrorHandler {
     }
 
     public func handle(fatalError: FatalError) {
-        logError(fatalError.localizedDescription)
+        log(fatalError)
 
         let terminateTitle = LocalizedString("ALERT_LOG_ERROR_HANDLER.TERMINATE_BUTTON.TITLE")
         let terminateAlertAction = UIAlertAction(title: terminateTitle, style: .destructive) { _ in
@@ -66,7 +66,7 @@ extension AlertLogErrorHandler: ErrorHandler {
     }
 
     public func handle(healableError: HealableError) {
-        logError(healableError.localizedDescription)
+        log(healableError)
 
         let healingOptions = healableError.healingOptions.map { alertAction(healingOption: $0) }
         showAlert(title: title(for: healableError.source), message: healableError.localizedDescription, actions: healingOptions)
@@ -105,6 +105,14 @@ extension AlertLogErrorHandler: ErrorHandler {
         }()
 
         return UIAlertAction(title: healingOption.title, style: alertActionStyle) { _ in healingOption.handler() }
+    }
+
+    private func log(_ error: Error) {
+        if let baseError = error as? BaseError, let description = baseError.debugDescription, !description.isBlank {
+            logError(description)
+        } else {
+            logError(error.localizedDescription)
+        }
     }
 
     private func crash(message: String) { // swiftlint:disable:this unavailable_function
