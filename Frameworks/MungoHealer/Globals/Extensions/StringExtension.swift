@@ -7,8 +7,8 @@ import Foundation
 
 extension String {
     /// - Returns: `true` if contains any cahracters other than whitespace or newline characters, else `no`.
-    public var isBlank: Bool { return stripped().isEmpty }
+    var isBlank: Bool { return stripped().isEmpty }
 
     /// - Returns: The string stripped by whitespace and newline characters from beginning and end.
-    public func stripped() -> String { return trimmingCharacters(in: .whitespacesAndNewlines) }
+    func stripped() -> String { return trimmingCharacters(in: .whitespacesAndNewlines) }
 }
