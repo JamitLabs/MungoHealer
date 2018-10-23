@@ -46,6 +46,7 @@
 		A102BDFF1F023E32000C6B38 /* MungoHealer.h in Headers */ = {isa = PBXBuildFile; fileRef = A102BDFE1F023E13000C6B38 /* MungoHealer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A102BE011F023E33000C6B38 /* MungoHealer.h in Headers */ = {isa = PBXBuildFile; fileRef = A102BDFE1F023E13000C6B38 /* MungoHealer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7D1B08D217F4B9E007C6F48 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1B08C217F4B9E007C6F48 /* StringExtension.swift */; };
+		F7D1B090217F5A8B007C6F48 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1B08C217F4B9E007C6F48 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -701,6 +702,7 @@
 				825D651D2174D570007A3ED3 /* UIWindowExtension.swift in Sources */,
 				82C646EA21762B7F00A41245 /* MungoHealableError.swift in Sources */,
 				825D65192174D335007A3ED3 /* ErrorHandler.swift in Sources */,
+				F7D1B090217F5A8B007C6F48 /* StringExtension.swift in Sources */,
 				825D65162174D32A007A3ED3 /* AlertLogErrorHandler.swift in Sources */,
 				825D650D2174C5E5007A3ED3 /* HealableError.swift in Sources */,
 				825D650A2174C344007A3ED3 /* ErrorSource.swift in Sources */,
