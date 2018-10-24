@@ -9,8 +9,8 @@
              alt="Build Status">
     </a>
     <a href="https://github.com/JamitLabs/MungoHealer/releases">
-        <img src="https://img.shields.io/badge/Version-0.2.0-blue.svg"
-             alt="Version: 0.2.0">
+        <img src="https://img.shields.io/badge/Version-0.3.0-blue.svg"
+             alt="Version: 0.3.0">
     </a>
     <img src="https://img.shields.io/badge/Swift-4.2-FFAC45.svg"
          alt="Swift: 4.2">
@@ -39,6 +39,53 @@ Error Handler based on localized & healable (recoverable) errors without the ove
 When developing a new feature for an App developers often need to both have presentable results **fast** and at the same time provide **good user feedback** for edge cases like failed network requests or invalid user input.
 
 While there are many ways to deal with such situations, MungoHealer provides a straightforward and Swift-powered approach that uses system alerts for user feedback by default, but can be easily customized to use custom UI when needed.
+
+## tl;dr
+
+Here's a very simple example of basic error handling without MungoHealer:
+
+```swift
+func login(success: (String) -> Void) {
+    guard let username = usernameLabel.text, !username.isEmpty else {
+        let alertCtrl = UIAlertController(title: "Invalid User Input", message: "Please enter a username.", preferredStyle: .alert)
+        alertCtrl.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        viewController.present(alertCtrl, animated: true, completion: nil)
+        return
+    }
+    guard let password = passwordLabel.text, !password.isEmpty else {
+        let alertCtrl = UIAlertController(title: "Invalid User Input", message: "Please enter a password.", preferredStyle: .alert)
+        alertCtrl.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        viewController.present(alertCtrl, animated: true, completion: nil)
+        return
+    }
+    guard let apiToken = getApiToken(username, password) else {
+        let alertCtrl = UIAlertController(title: "Invalid User Input", message: "Username and password did not match.", preferredStyle: .alert)
+        alertCtrl.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        viewController.present(alertCtrl, animated: true, completion: nil)
+        return
+    }
+    success(apiToken)
+)
+```
+
+Using MungoHealer the above code becomes this:
+
+```swift
+func login(success: (String) -> Void) {
+    mungo.do {
+        guard let username = usernameLabel.text, !username.isEmpty else {
+            throw MungoError(source: .invalidUserInput, message: "Please enter a username.")
+        }
+        guard let password = passwordLabel.text, !password.isEmpty else {
+            throw MungoError(source: .invalidUserInput, message: "Please enter a password.")
+        }
+        guard let apiToken = getApiToken(username, password) else {
+            throw MungoError(source: .invalidUserInput, message: "Username and password did not match.")
+        }
+        success(apiToken)
+    }
+)
+```
 
 ## Installation
 
@@ -339,6 +386,16 @@ private func loadAvatarImage() {
 ```
 
 We don't need to deal with error handling on the call side which  makes our code both more readable & more fun to write. Instead, we define how to deal with the errors at the point where the error is thrown/defined. On top of that, the way errors are communicated to the user is abstracted away and can be changed App-wide by simply editing the error handler code. This also makes it possible to handle errors in the model or networking layer without referencing any `UIKit` classes.
+
+For cases where you just want one catch-all where you just call the `handle(error)` method, there's even a shorthand which will deal with this automatically. Just use this instead of the above code:
+
+```swift
+private func loadAvatarImage() {
+    mungo.do {
+        imageView.image = try fetchImage(urlPath: user.avatarUrlPath)
+    }
+}
+```
 
 So as you can see, used wisely, MungoHealer can help to make your code **cleaner**, **less error prone** and it can **improve the User Experience** for your users.
 

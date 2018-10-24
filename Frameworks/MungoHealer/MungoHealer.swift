@@ -38,4 +38,15 @@ public class MungoHealer {
             errorHandler.handle(error: error)
         }
     }
+
+    /// Shorthand syntax for handling all errors using `mungo.handle(error)`.
+    ///
+    /// - Parameter closure: The throwing code to be handled automatically if needed.
+    public func `do`(_ closure: () throws -> Void) {
+        do {
+            try closure()
+        } catch {
+            handle(error)
+        }
+    }
 }
