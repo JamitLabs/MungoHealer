@@ -40,6 +40,53 @@ When developing a new feature for an App developers often need to both have pres
 
 While there are many ways to deal with such situations, MungoHealer provides a straightforward and Swift-powered approach that uses system alerts for user feedback by default, but can be easily customized to use custom UI when needed.
 
+## tl;dr
+
+Here's a very simple example of basic error handling without MungoHealer:
+
+```swift
+func login(success: (String) -> Void) {
+    guard let username = usernameLabel.text, !username.isEmpty else {
+        let alertCtrl = UIAlertController(title: "Invalid User Input", message: "Please enter a username.", preferredStyle: .alert)
+        alertCtrl.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        viewController.present(alertCtrl, animated: true, completion: nil)
+        return
+    }
+    guard let password = passwordLabel.text, !password.isEmpty else {
+        let alertCtrl = UIAlertController(title: "Invalid User Input", message: "Please enter a password.", preferredStyle: .alert)
+        alertCtrl.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        viewController.present(alertCtrl, animated: true, completion: nil)
+        return
+    }
+    guard let apiToken = getApiToken(username, password) else {
+        let alertCtrl = UIAlertController(title: "Invalid User Input", message: "Username and password did not match.", preferredStyle: .alert)
+        alertCtrl.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        viewController.present(alertCtrl, animated: true, completion: nil)
+        return
+    }
+    success(apiToken)
+)
+```
+
+Using MungoHealer the above code becomes this:
+
+```swift
+func login(success: (String) -> Void) {
+    mungo.do {
+        guard let username = usernameLabel.text, !username.isEmpty else {
+            throw MungoError(source: .invalidUserInput, message: "Please enter a username.")
+        }
+        guard let password = passwordLabel.text, !password.isEmpty else {
+            throw MungoError(source: .invalidUserInput, message: "Please enter a password.")
+        }
+        guard let apiToken = getApiToken(username, password) else {
+            throw MungoError(source: .invalidUserInput, message: "Username and password did not match.")
+        }
+        success(apiToken)
+    }
+)
+```
+
 ## Installation
 
 Installing via [Carthage](https://github.com/Carthage/Carthage#carthage) & [CocoaPods](https://guides.cocoapods.org/using/getting-started.html) are both supported.
