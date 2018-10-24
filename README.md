@@ -9,8 +9,8 @@
              alt="Build Status">
     </a>
     <a href="https://github.com/JamitLabs/MungoHealer/releases">
-        <img src="https://img.shields.io/badge/Version-0.1.0-blue.svg"
-             alt="Version: 0.1.0">
+        <img src="https://img.shields.io/badge/Version-0.2.0-blue.svg"
+             alt="Version: 0.2.0">
     </a>
     <img src="https://img.shields.io/badge/Swift-4.2-FFAC45.svg"
          alt="Swift: 4.2">
@@ -43,6 +43,7 @@ While there are many ways to deal with such situations, MungoHealer provides a s
 ## Installation
 
 Installing via [Carthage](https://github.com/Carthage/Carthage#carthage) & [CocoaPods](https://guides.cocoapods.org/using/getting-started.html) are both supported.
+
 Support for SPM is currently not possible as this framework uses UIKit.
 
 ## Usage
@@ -53,6 +54,7 @@ Please also have a look at the `MungoHealer iOS-Demo` project in the subfolder `
 ### Features Overview
 
 - [Defining Errors](#defining-errors)
+- [Default Error Types](#default-error-types)
 - [Error Handling](#error-handling)
 - [Usage Example](#usage-example)
 
@@ -171,6 +173,72 @@ struct NetworkUnavailableError: HealableError {
         let cancelOption = HealingOption(style: .normal, title: "Cancel", handler: {})
         return [retryOption, cancelOption]
     }
+}
+```
+
+</details>
+
+### Default Error Types
+
+MungoHealer provides one basic implementation of each error protocol which you can use for convenience so you don't have to write a new error type for simple message errors. These are:
+
+<details>
+<summary>MungoError</summary>
+
+- Implements `BaseError`
+- `init` takes `source: ErrorSource` & `message: String`
+
+Example Usage:
+
+```swift
+func fetchImage(urlPath: String) {
+  guard let url = URL(string: urlPath) else {
+    throw MungoError(source: .invalidUserInput, message: "Invalid Path")
+  }
+
+  // ...
+}
+```
+
+</details>
+
+<details>
+<summary>MungoFatalError</summary>
+
+- Implements `FatalError`
+- `init` takes `source: ErrorSource` & `message: String`
+
+Example Usage:
+
+```swift
+func fetchImage(urlPath: String) {
+  guard let url = URL(string: urlPath) else {
+    throw MungoFatalError(source: .invalidUserInput, message: "Invalid Path")
+  }
+
+  // ...
+}
+```
+
+</details>
+
+<details>
+<summary>MungoHealableError</summary>
+
+- Implements `HealableError`
+- `init` takes `source: ErrorSource` & `message: String`
+- `init` additionally takes `healOption: HealOption`
+
+Example Usage:
+
+```swift
+func fetchImage(urlPath: String) {
+  guard let url = URL(string: urlPath) else {
+    let healingOption = HealingOption(style: .recommended, title: "Retry") { [weak self] in self?.fetchImage(urlPath: urlPath) }
+    throw MungoHealableError(source: .invalidUserInput, message: "Invalid Path", healingOption: healingOption)
+  }
+
+  // ...
 }
 ```
 

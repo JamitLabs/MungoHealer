@@ -10,3 +10,6 @@
 // Alert Log Error Handler - Buttons
 "ALERT_LOG_ERROR_HANDLER.OKAY_BUTTON.TITLE" = "Okay";
 "ALERT_LOG_ERROR_HANDLER.TERMINATE_BUTTON.TITLE" = "Terminate App";
+
+// ErrorTypes
+"ERROR_TYPES.CANCEL_BUTTON.TITLE" = "Cancel";
