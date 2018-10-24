@@ -340,6 +340,16 @@ private func loadAvatarImage() {
 
 We don't need to deal with error handling on the call side which  makes our code both more readable & more fun to write. Instead, we define how to deal with the errors at the point where the error is thrown/defined. On top of that, the way errors are communicated to the user is abstracted away and can be changed App-wide by simply editing the error handler code. This also makes it possible to handle errors in the model or networking layer without referencing any `UIKit` classes.
 
+For cases where you just want one catch-all where you just call the `handle(error)` method, there's even a shorthand which will deal with this automatically. Just use this instead of the above code:
+
+```swift
+private func loadAvatarImage() {
+    mungo.do {
+        imageView.image = try fetchImage(urlPath: user.avatarUrlPath)
+    }
+}
+```
+
 So as you can see, used wisely, MungoHealer can help to make your code **cleaner**, **less error prone** and it can **improve the User Experience** for your users.
 
 ## Contributing

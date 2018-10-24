@@ -41,42 +41,32 @@ struct MyHealableError: HealableError {
 
 class ViewController: UIViewController {
     @IBAction func throwErrorButtonPressed() {
-        do {
+        mungo.do {
             throw MyError()
-        } catch {
-            mungo.handle(error)
         }
     }
 
     @IBAction func throwLocalizedErrorButtonPressed() {
-        do {
+        mungo.do {
             throw MyLocalizedError()
-        } catch {
-            mungo.handle(error)
         }
     }
 
     @IBAction func throwBaseErrorButtonPressed() {
-        do {
+        mungo.do {
             throw MyBaseError()
-        } catch {
-            mungo.handle(error)
         }
     }
 
     @IBAction func throwFatalErrorButtonPressed() {
-        do {
+        mungo.do {
             throw MyFatalError()
-        } catch {
-            mungo.handle(error)
         }
     }
 
     @IBAction func throwHealableErrorButtonPressed() {
-        do {
+        mungo.do {
             throw MyHealableError(retryClosure: { [weak self] in self?.throwHealableErrorButtonPressed() })
-        } catch {
-            mungo.handle(error)
         }
     }
 }
