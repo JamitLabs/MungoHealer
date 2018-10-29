@@ -108,8 +108,8 @@ extension AlertLogErrorHandler: ErrorHandler {
     }
 
     private func log(_ error: Error) {
-        if let baseError = error as? BaseError, let description = baseError.debugDescription, !description.isBlank {
-            logError(description)
+        if let baseError = error as? BaseError, let debugDescription = baseError.debugDescription, !debugDescription.isBlank {
+            logError("\(error.localizedDescription) | Details: \(debugDescription)")
         } else {
             logError(error.localizedDescription)
         }

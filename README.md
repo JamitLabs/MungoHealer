@@ -86,6 +86,9 @@ The options are explained in detail [here](https://khawerkhaliq.com/blog/swift-e
 **`errorDescription: String`**
 A localized message describing what error occurred. This will be presented to the user as the alerts message by default when the error occurs.
 
+**`debugDescription: String?`**
+An optional message describing the error in more technical detail for debugging purposes. This will **not** be presented to the user and so for **only** logged.
+
 </details>
 
 <details>
