@@ -45,6 +45,8 @@
 		A102BDD41F023C81000C6B38 /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = A102BDCA1F023C3E000C6B38 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A102BDFF1F023E32000C6B38 /* MungoHealer.h in Headers */ = {isa = PBXBuildFile; fileRef = A102BDFE1F023E13000C6B38 /* MungoHealer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A102BE011F023E33000C6B38 /* MungoHealer.h in Headers */ = {isa = PBXBuildFile; fileRef = A102BDFE1F023E13000C6B38 /* MungoHealer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7D1B08D217F4B9E007C6F48 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1B08C217F4B9E007C6F48 /* StringExtension.swift */; };
+		F7D1B090217F5A8B007C6F48 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1B08C217F4B9E007C6F48 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +134,7 @@
 		A15AD1201F0240C9004D7ED3 /* MungoHealer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = MungoHealer.podspec; sourceTree = "<group>"; };
 		A15AD1211F02447E004D7ED3 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		A15AD1241F0262D1004D7ED3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F7D1B08C217F4B9E007C6F48 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,7 @@
 		825D651A2174D55A007A3ED3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F7D1B08C217F4B9E007C6F48 /* StringExtension.swift */,
 				825D651B2174D570007A3ED3 /* UIWindowExtension.swift */,
 			);
 			path = Extensions;
@@ -669,6 +673,7 @@
 				825D651C2174D570007A3ED3 /* UIWindowExtension.swift in Sources */,
 				82C646E921762B7F00A41245 /* MungoHealableError.swift in Sources */,
 				825D65182174D335007A3ED3 /* ErrorHandler.swift in Sources */,
+				F7D1B08D217F4B9E007C6F48 /* StringExtension.swift in Sources */,
 				825D65152174D32A007A3ED3 /* AlertLogErrorHandler.swift in Sources */,
 				825D650C2174C5E5007A3ED3 /* HealableError.swift in Sources */,
 				825D65092174C344007A3ED3 /* ErrorSource.swift in Sources */,
@@ -697,6 +702,7 @@
 				825D651D2174D570007A3ED3 /* UIWindowExtension.swift in Sources */,
 				82C646EA21762B7F00A41245 /* MungoHealableError.swift in Sources */,
 				825D65192174D335007A3ED3 /* ErrorHandler.swift in Sources */,
+				F7D1B090217F5A8B007C6F48 /* StringExtension.swift in Sources */,
 				825D65162174D32A007A3ED3 /* AlertLogErrorHandler.swift in Sources */,
 				825D650D2174C5E5007A3ED3 /* HealableError.swift in Sources */,
 				825D650A2174C344007A3ED3 /* ErrorSource.swift in Sources */,
