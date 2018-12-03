@@ -96,6 +96,8 @@
 /* Begin PBXFileReference section */
 		000E616F2086425500C0638C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0085926E2046FD1B00AB529F /* beak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beak.swift; sourceTree = "<group>"; };
+		820560AE217DE97100E23A81 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		820560AF217DE97100E23A81 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		825D64CB2174AFCB007A3ED3 /* MungoHealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MungoHealer.swift; sourceTree = "<group>"; };
 		825D64D02174B1CB007A3ED3 /* .projlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .projlint.yml; sourceTree = "<group>"; };
 		825D64D52174B388007A3ED3 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -217,6 +219,13 @@
 			path = Globals;
 			sourceTree = "<group>";
 		};
+		8298778D2181BDCB000D0D6B /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
 		82C646E121762A4C00A41245 /* ErrorTypes */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +318,7 @@
 		A102BDB61F023A6D000C6B38 /* RootFiles */ = {
 			isa = PBXGroup;
 			children = (
+				8298778D2181BDCB000D0D6B /* Scripts */,
 				825D64D02174B1CB007A3ED3 /* .projlint.yml */,
 				A102BDD51F023CAA000C6B38 /* .swiftlint.yml */,
 				0085926E2046FD1B00AB529F /* beak.swift */,
@@ -316,6 +326,8 @@
 				A102BDB81F023A8A000C6B38 /* Cartfile.private */,
 				A102BDB91F023A9A000C6B38 /* Cartfile.resolved */,
 				825D64D52174B388007A3ED3 /* CHANGELOG.md */,
+				820560AF217DE97100E23A81 /* CODE_OF_CONDUCT.md */,
+				820560AE217DE97100E23A81 /* CONTRIBUTING.md */,
 				A15AD1241F0262D1004D7ED3 /* LICENSE */,
 				A15AD1201F0240C9004D7ED3 /* MungoHealer.podspec */,
 				A15AD1211F02447E004D7ED3 /* Package.swift */,

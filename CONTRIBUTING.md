@@ -14,15 +14,6 @@ Before you start developing, please make sure you have the following tools insta
 - [SwiftLint](https://github.com/realm/SwiftLint)
 - [ProjLint](https://github.com/JamitLabs/ProjLint)
 - [Beak](https://github.com/yonaskolb/Beak)
-- [Sourcery](https://github.com/krzysztofzablocki/Sourcery)
-
-### Useful Commands
-
-To **update the Linux tests** (required after adding/renaming/removing test methods):
-
-```
-beak run generateLinuxMain
-```
 
 This will make sure the Linux CI can also find and run all the tests.
 
