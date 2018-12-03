@@ -45,6 +45,8 @@
 		A102BDD41F023C81000C6B38 /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = A102BDCA1F023C3E000C6B38 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A102BDFF1F023E32000C6B38 /* MungoHealer.h in Headers */ = {isa = PBXBuildFile; fileRef = A102BDFE1F023E13000C6B38 /* MungoHealer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A102BE011F023E33000C6B38 /* MungoHealer.h in Headers */ = {isa = PBXBuildFile; fileRef = A102BDFE1F023E13000C6B38 /* MungoHealer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7D1B08D217F4B9E007C6F48 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1B08C217F4B9E007C6F48 /* StringExtension.swift */; };
+		F7D1B090217F5A8B007C6F48 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1B08C217F4B9E007C6F48 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 /* Begin PBXFileReference section */
 		000E616F2086425500C0638C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0085926E2046FD1B00AB529F /* beak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beak.swift; sourceTree = "<group>"; };
+		820560AE217DE97100E23A81 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		820560AF217DE97100E23A81 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		825D64CB2174AFCB007A3ED3 /* MungoHealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MungoHealer.swift; sourceTree = "<group>"; };
 		825D64D02174B1CB007A3ED3 /* .projlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .projlint.yml; sourceTree = "<group>"; };
 		825D64D52174B388007A3ED3 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 		A15AD1201F0240C9004D7ED3 /* MungoHealer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = MungoHealer.podspec; sourceTree = "<group>"; };
 		A15AD1211F02447E004D7ED3 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		A15AD1241F0262D1004D7ED3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F7D1B08C217F4B9E007C6F48 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +204,7 @@
 		825D651A2174D55A007A3ED3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F7D1B08C217F4B9E007C6F48 /* StringExtension.swift */,
 				825D651B2174D570007A3ED3 /* UIWindowExtension.swift */,
 			);
 			path = Extensions;
@@ -211,6 +217,13 @@
 				825D651A2174D55A007A3ED3 /* Extensions */,
 			);
 			path = Globals;
+			sourceTree = "<group>";
+		};
+		8298778D2181BDCB000D0D6B /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scripts;
 			sourceTree = "<group>";
 		};
 		82C646E121762A4C00A41245 /* ErrorTypes */ = {
@@ -305,6 +318,7 @@
 		A102BDB61F023A6D000C6B38 /* RootFiles */ = {
 			isa = PBXGroup;
 			children = (
+				8298778D2181BDCB000D0D6B /* Scripts */,
 				825D64D02174B1CB007A3ED3 /* .projlint.yml */,
 				A102BDD51F023CAA000C6B38 /* .swiftlint.yml */,
 				0085926E2046FD1B00AB529F /* beak.swift */,
@@ -312,6 +326,8 @@
 				A102BDB81F023A8A000C6B38 /* Cartfile.private */,
 				A102BDB91F023A9A000C6B38 /* Cartfile.resolved */,
 				825D64D52174B388007A3ED3 /* CHANGELOG.md */,
+				820560AF217DE97100E23A81 /* CODE_OF_CONDUCT.md */,
+				820560AE217DE97100E23A81 /* CONTRIBUTING.md */,
 				A15AD1241F0262D1004D7ED3 /* LICENSE */,
 				A15AD1201F0240C9004D7ED3 /* MungoHealer.podspec */,
 				A15AD1211F02447E004D7ED3 /* Package.swift */,
@@ -669,6 +685,7 @@
 				825D651C2174D570007A3ED3 /* UIWindowExtension.swift in Sources */,
 				82C646E921762B7F00A41245 /* MungoHealableError.swift in Sources */,
 				825D65182174D335007A3ED3 /* ErrorHandler.swift in Sources */,
+				F7D1B08D217F4B9E007C6F48 /* StringExtension.swift in Sources */,
 				825D65152174D32A007A3ED3 /* AlertLogErrorHandler.swift in Sources */,
 				825D650C2174C5E5007A3ED3 /* HealableError.swift in Sources */,
 				825D65092174C344007A3ED3 /* ErrorSource.swift in Sources */,
@@ -697,6 +714,7 @@
 				825D651D2174D570007A3ED3 /* UIWindowExtension.swift in Sources */,
 				82C646EA21762B7F00A41245 /* MungoHealableError.swift in Sources */,
 				825D65192174D335007A3ED3 /* ErrorHandler.swift in Sources */,
+				F7D1B090217F5A8B007C6F48 /* StringExtension.swift in Sources */,
 				825D65162174D32A007A3ED3 /* AlertLogErrorHandler.swift in Sources */,
 				825D650D2174C5E5007A3ED3 /* HealableError.swift in Sources */,
 				825D650A2174C344007A3ED3 /* ErrorSource.swift in Sources */,

@@ -9,14 +9,14 @@
              alt="Build Status">
     </a>
     <a href="https://github.com/JamitLabs/MungoHealer/releases">
-        <img src="https://img.shields.io/badge/Version-0.3.0-blue.svg"
-             alt="Version: 0.3.0">
+        <img src="https://img.shields.io/badge/Version-0.3.1-blue.svg"
+             alt="Version: 0.3.1">
     </a>
     <img src="https://img.shields.io/badge/Swift-4.2-FFAC45.svg"
          alt="Swift: 4.2">
     <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS-FF69B4.svg"
         alt="Platforms: iOS | tvOS">
-    <a href="https://github.com/JamitLabs/MungoHealer/blob/stable/LICENSE.md">
+    <a href="https://github.com/JamitLabs/MungoHealer/blob/stable/LICENSE">
         <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg"
               alt="License: MIT">
     </a>
@@ -132,6 +132,9 @@ The options are explained in detail [here](https://khawerkhaliq.com/blog/swift-e
 
 **`errorDescription: String`**
 A localized message describing what error occurred. This will be presented to the user as the alerts message by default when the error occurs.
+
+**`debugDescription: String?`**
+An optional message describing the error in more technical detail for debugging purposes. This will **not** be presented to the user and so for **only** logged.
 
 </details>
 

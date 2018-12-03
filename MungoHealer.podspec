@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MungoHealer"
-  s.version      = "0.3.0"
+  s.version      = "0.3.1"
   s.summary      = "Error Handler based on localized & healable (recoverable) errors without the overhead of NSError. "
 
   s.description  = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/JamitLabs/MungoHealer.git", :tag => "#{s.version}" }
-  s.source_files = "Frameworks/MungoHealer", "Frameworks/MungoHealer/**/*.swift"
+  s.source_files = "Frameworks/MungoHealer/**/*.swift"
   s.framework    = "UIKit"
   s.swift_version = "4.2"
   s.resource_bundle = { "MungoHealer" => ["Frameworks/SupportingFiles/*.lproj"] }
