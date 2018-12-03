@@ -9,8 +9,8 @@
              alt="Build Status">
     </a>
     <a href="https://github.com/JamitLabs/MungoHealer/releases">
-        <img src="https://img.shields.io/badge/Version-0.3.0-blue.svg"
-             alt="Version: 0.3.0">
+        <img src="https://img.shields.io/badge/Version-0.3.1-blue.svg"
+             alt="Version: 0.3.1">
     </a>
     <img src="https://img.shields.io/badge/Swift-4.2-FFAC45.svg"
          alt="Swift: 4.2">

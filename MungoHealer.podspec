@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MungoHealer"
-  s.version      = "0.3.0"
+  s.version      = "0.3.1"
   s.summary      = "Error Handler based on localized & healable (recoverable) errors without the overhead of NSError. "
 
   s.description  = <<-DESC
