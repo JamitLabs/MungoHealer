@@ -49,4 +49,16 @@ public class MungoHealer {
             handle(error)
         }
     }
+
+    /// Typed shorthand syntax for handling all errors using `mungo.handle(error)`.
+    ///
+    /// - Parameter closure: The throwing code returning an object to be handled automatically if needed.
+    public func make<ResultType>(_ closure: () throws -> ResultType) -> ResultType? {
+        do {
+            return try closure()
+        } catch {
+            handle(error)
+            return nil
+        }
+    }
 }
