@@ -13,16 +13,22 @@ struct MyLocalizedError: LocalizedError {
 }
 
 struct MyBaseError: BaseError {
+    var debugDescription: String?
+    
     let errorDescription = "This is a fake base error message for presenting to the user."
     let source = ErrorSource.allCases.randomElement()!
 }
 
 struct MyFatalError: FatalError {
+    var debugDescription: String?
+    
     let errorDescription = "This is a fake fatal error message for presenting to the user."
     let source = ErrorSource.allCases.randomElement()!
 }
 
 struct MyHealableError: HealableError {
+    var debugDescription: String?
+    
     private let retryClosure: () -> Void
 
     let errorDescription = "This is a fake healable error message for presenting to the user."
