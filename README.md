@@ -12,8 +12,8 @@
         <img src="https://img.shields.io/badge/Version-0.3.2-blue.svg"
              alt="Version: 0.3.2">
     </a>
-    <img src="https://img.shields.io/badge/Swift-4.2-FFAC45.svg"
-         alt="Swift: 4.2">
+    <img src="https://img.shields.io/badge/Swift-5.0-FFAC45.svg"
+         alt="Swift: 5.0">
     <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS-FF69B4.svg"
         alt="Platforms: iOS | tvOS">
     <a href="https://github.com/JamitLabs/MungoHealer/blob/stable/LICENSE">
